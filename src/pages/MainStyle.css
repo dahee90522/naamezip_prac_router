@@ -1,0 +1,20 @@
+.slotcontainerApp{
+    width : 50%;
+    margin:0 auto
+  }
+.mainimagecontainer{width:60%;margin:0 auto;margin-bottom:70px;}
+#img2, #img3{
+  display:none;
+}
+.instacontainer{
+  background-color : #e5d5c8;
+  text-align : center;
+  height : 20vh;
+}
+@media(max-width:1220px){
+  .mainimagecontainer{width : 100%;}
+  .slotcontainerApp{width : 80%}
+}
+.insta:hover{
+  text-decoration:underline;
+}
