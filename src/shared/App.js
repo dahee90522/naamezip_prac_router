@@ -8,12 +8,11 @@ import Menu from '../components/Menu';
 class App extends Component {
     render() {
         return (
-            <div>
-                <Mainpage/>
-                <Route exact path="/" component={Mainpage}/>
-                <Switch>
+            <div>                
+                <Switch> 
                     <Route exact path="/Mypage/:name" component={Mypage}/>
                     <Route exact path="/Mypage" component={Mypage}/>
+                    <Route exact path="/" component={Mainpage}/>
                 </Switch>
             </div>
         );
