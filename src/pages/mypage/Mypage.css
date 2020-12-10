@@ -1,0 +1,191 @@
+.mypagecontainer{
+    width : 45%;
+margin: 0 auto;
+padding: 20px 16px 40px;
+
+}
+.mypagecontainer .mypagetitle{
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: -1px;
+    color: #333;
+}
+.mypagecontainer .mypagetitle span{
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    
+}
+.mypagecontainer .mypagetitle span:before{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    opacity: .4;
+    background-color: #ff6f61;
+    
+}
+.mypagecontainer .mypageinfo {
+    margin-bottom : 30px;
+}
+.mypagecontainer .mypageinfo .h3{
+    float: left;
+    width: 100%;
+    display: flex;
+}
+.mypagecontainer .mypageinfo h3{
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: -.8px;
+    color: #ff6f61;
+    display: block;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width : 50%;
+    margin : 15px 0;
+
+}
+.mypagecontainer .mypageinfo h3:first-child{
+    text-align : left;
+    color: #333;
+}
+.mypagecontainer .mypageinfo h3:last-child{
+    text-align : right;
+}
+.mypagecontainer .mypageinfo .mypagenamephone{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #000;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.mypagecontainer .mypageinfo .mypagenamephone span{
+    display: inline;
+    float:right;
+    text-align : right;
+    margin : 5px 0 0 ;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -.8px;
+    text-align: right;
+    color: #ff6f61!important;
+    flex-shrink: 0;
+    margin-left: 15px;
+}
+.mypagecontainer .mypageinfo .mypageemail{
+    padding-top : 10px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #000;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+.mypagecontainer .mypageinfo .mypageemail span{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #000;
+    float:right;
+}
+.mypagecontainer .mypagenowtitle{
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: -1px;
+    color: #333;
+}
+.mypagecontainer .mypagenowtitle span{
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    
+}
+.mypagecontainer .mypagenowtitle span:before{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    opacity: .4;
+    background-color: #ff6f61;
+    
+}
+.mypagecontainer .mypagecardinfo {
+    margin-bottom : 30px;
+}
+.mypagecontainer .mypagecardinfo .h3{
+    float: left;
+    width: 100%;
+    display: flex;
+}
+.mypagecontainer .mypagecardinfo h3{
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: -.8px;
+    color: #ff6f61;
+    display: block;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width : 50%;
+    margin : 15px 0;
+
+}
+.mypagecontainer .mypagecardinfo h3:first-child{
+    text-align : left;
+    color: #333;
+}
+.mypagecontainer .mypagecardinfo h3:last-child{
+    text-align : right;
+}
+.mypagecontainer .mypagecardinfo .cardtrue{
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: -.94px;
+    text-align: center;
+    color: #333;
+}

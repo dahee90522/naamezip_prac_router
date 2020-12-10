@@ -58,21 +58,16 @@ a {
       margin-right: 20px;
       
   }
+  .topmenu li:last-child{
+    margin-right: 0;
+    
+}
   .mypagemenu{
       float:right;
       position: absolute;
       right: 0;
       top: 50%;
       transform: translate(0, -50%);
-      font-family: Noto Sans KR;
-      font-size: 15px;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: -.8px;
-      text-align: right;
-      color: #333;
   }
   
   @media(max-width:1220px){
