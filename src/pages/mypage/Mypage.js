@@ -10,8 +10,8 @@ const Mypage = ({match}) => {
                     <h3>내정보</h3>
                     <h3>로그아웃</h3>
                 </div>
-                <div className = "mypagenamephone">{match.params.name}(19, 여) / 01023191342<span>수정</span></div>
-                <div className = "mypageemail">itsdahee@kakao.com<span>카카오계정</span></div>
+                <div className = "mypagenamephone">황다희(19, 여) / 01023191342<span>수정</span></div>
+                <div className = "mypageemail">{match.params.email}<span>카카오계정</span></div>
             </div>
             <div className = "mypagecardinfo">
                 <div className = "h3">
