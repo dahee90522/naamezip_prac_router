@@ -1,10 +1,6 @@
 import React from 'react';
 import './Mypage.css';
 
-
-        // <div className="topcontainer">
-        //     <h1>{match.params.name}마이페이지임</h1>
-        // </div>
 const Mypage = ({match}) => {
     return (
         <div className = "mypagecontainer">

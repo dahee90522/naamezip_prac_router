@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
     const activeStyle = {
-        fontWeight :'bolder'
+        fontWeight :'bold'
     };
     return (
         <div className="topcontainer">
