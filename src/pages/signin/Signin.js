@@ -9,13 +9,14 @@ function Signin({ authenticated, login, location }) {
     const [password, setPassword] = useState('');
 
     const handleClick = () => {
-    try {
-        login({ email, password });
-    } catch (e) {
-        alert('로그인 실패임');
-        setEmail('');
-        setPassword('');
-    }
+        try {
+            login({ email, password });
+        } catch (e) {
+            alert('로그인 실패임');
+            setEmail('');
+            setPassword('');
+            
+        }
     };
 
     const { from } = location.state || { from: { pathname: "/mypage" } };
