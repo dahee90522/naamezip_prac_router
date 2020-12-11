@@ -30,6 +30,9 @@
     opacity: 0.4;
     background-color: #ff6f61;
   }
+  input:-internal-autofill-selected {
+    color : black!important;
+}
   .Signincontainer form input {
     width : 100%;
     border : 1px solid #ccc;
@@ -43,10 +46,7 @@
     font-weight : bolder;
     margin : 5px auto;
   }
-  input:-internal-autofill-selected {
-    background-color: white !important;
-    color: #aaa !important;
-}
+  
   .Signincontainer input[type="button"] {
     width : 100%;
     color : white!important;

@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './sign.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import Router from 'next/router';
 
-class Signin extends Component {
-    state = {
-        email: ''
-      }
-      handleChange = (e) => {
-        this.setState({
-          email: e.target.value
-        })
-      }
-    render(){
-        return (
-            <div className = "Signincontainer">
-                <h3><span>이메일</span>로 로그인하기</h3><br/>
-                <form>
-                    <input name ="email" value={this.state.email} placeholder="이메일주소 입력" onChange={this.handleChange}id = "email"/><br/>
-                    <input type = "password" name ="password" placeholder="비밀번호 입력"/><br/>
-                    <Link to ={`/mypage/${this.state.email}`}><input type = "button" value = "로그인"/></Link>
-                </form>
-            </div>
-        );
-    }
+
+const Signin = props => {
+    // function check(){
+    //     var idid = document.getElementById('id');
+    //     var pwpw = document.getElementById('pw');
+    //     console.log(idid.target.value, "   ", pwpw.target.value);
+    //     if(props.email === idid && props.pw === pwpw){
+    //         console.log(props.email);
+    //     }
+
+    // }
+    return (
+        <div className = "Signincontainer">
+            <h3><span>이메일</span>로 로그인하기</h3><br/>
+            <form>
+                <input 
+                    type = "text" 
+                    name = "email" 
+                    placeholder="이메일주소 입력"  
+                    id = "email"
+                /><br/>
+                <input 
+                    type = "password" 
+                    name ="password" 
+                    placeholder="비밀번호 입력" 
+                    id = "pw"
+                /><br/>
+                    {/* <Link to ={`/mypage/`}>  */}
+                        <input type = "button" value = "로그인" onClick = {check}/>
+                    {/* </Link> */}
+            </form>
+        </div>
+    );
 }
 
-export default Signin;  
+export default Signin; 
+

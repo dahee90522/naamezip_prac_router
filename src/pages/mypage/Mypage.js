@@ -1,7 +1,7 @@
 import React from 'react';
 import './Mypage.css';
 
-const Mypage = ({match}) => {
+const Mypage = () => {
     return (
         <div className = "mypagecontainer">
             <div className="mypagetitle"><span>마이</span>페이지</div>
@@ -11,7 +11,7 @@ const Mypage = ({match}) => {
                     <h3>로그아웃</h3>
                 </div>
                 <div className = "mypagenamephone">황다희(19, 여) / 01023191342<span>수정</span></div>
-                <div className = "mypageemail">{match.params.email}<span>카카오계정</span></div>
+                <div className = "mypageemail">이메일<span>카카오계정</span></div>
             </div>
             <div className = "mypagecardinfo">
                 <div className = "h3">
