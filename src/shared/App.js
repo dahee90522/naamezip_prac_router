@@ -33,7 +33,6 @@ const App = (props) => {
                         <li className="discovery"><NavLink to="/discovery"activeStyle={activeStyle}>남의집 둘러보기</NavLink></li>
                         <li className="host"><NavLink to="/host"activeStyle={activeStyle}>남의집 관리실</NavLink></li>
                         <li className="about"><NavLink to="/about"activeStyle={activeStyle}>남의집이란</NavLink></li>
-                        {/* <li className="mypagemenu"><NavLink to="/login"activeStyle={activeStyle}>로그인</NavLink></li>  */}
                         <li className="mypagemenu">
                             {authenticated ? (
                                 <NavLink to="/mypage"activeStyle={activeStyle}>마이페이지</NavLink>
@@ -45,10 +44,10 @@ const App = (props) => {
             </div>
             <Switch> 
                 <AuthRoute
-                    authenticated={authenticated}
+                    authenticated={authenticated}// 로그인 된 사람만 들어가게 하기
                     path="/mypage"
                     render={props => <Mypage user={user} {...props} />}
-                />
+                />{/* 마이 페이지에 로그인 값 넘기기 */}
                 <Route exact path="/Login" component={Login}/>
                 <Route exact path="/Signin" render={props => (
                     <Signin authenticated={authenticated} login={login} {...props} />

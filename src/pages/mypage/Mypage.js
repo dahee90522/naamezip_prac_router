@@ -25,11 +25,13 @@ function Mypage({ user }) {
                 </div>
                 <div className = "cardtrue">카드가 등록되어 있습니다.</div>
             </div>
+            
             <div className="mypagenowtitle"><span>남의집</span>현황</div>   
             {/* 비밀번호 : {password} */}
             
         </div>
     );
 };
+
 
 export default Mypage;
