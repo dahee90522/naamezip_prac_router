@@ -18,9 +18,9 @@ const App = (props) => {
 
 	const login = ({ email, password }) => setUser(signIn({ email, password }));
 	const logout = () => setUser(null);
-
 	return (
 		<div>
+
 			<div className="topcontainer">
 				<div className = "topmenu">
 					<NavLink to="/"><img 
