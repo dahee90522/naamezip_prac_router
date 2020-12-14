@@ -8,7 +8,7 @@ import AuthRoute from "./auth/AuthRoute";
 import Logoutbtn from "./auth/Logoutbtn";
 import "../menu.css";
 
-const App = (props) => {
+const App = props => {
   const activeStyle = {
     fontWeight: "bold",
   };
@@ -64,7 +64,7 @@ const App = (props) => {
         <AuthRoute
           authenticated={authenticated} // 로그인 된 사람만 들어가게 하기
           path="/mypage"
-          render={(props) => <Mypage user={user} {...props} />}
+          render={props => <Mypage user={user} {...props} />}
         />
         {/* 마이 페이지에 로그인 값 넘기기 */}
         <Route exact path="/Login" component={Login} />
@@ -72,14 +72,14 @@ const App = (props) => {
         <Route
           exact
           path="/Signin"
-          render={(props) => (
+          render={props => (
             <Signin authenticated={authenticated} login={login} {...props} />
           )}
         />
         <Route
           exact
           path="/logout"
-          render={(props) => <Logoutbtn logout={logout} />}
+          render={props => <Logoutbtn logout={logout} />}
         />
         <Route exact path="/" component={Mainpage} />
         <Route component={NotFound} />
