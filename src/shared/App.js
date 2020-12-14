@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 
 import React, { useState } from "react";
 import { Route, Switch, NavLink } from "react-router-dom";

@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-`npm install react-router-dom` router 모듈
-`npm install eslint --save-dev` eslint 모듈 .eslintrc.js
-`npm install prettier --save-dev --save-exact` prettier 모듈 .prettierrc
-<!--`npm install husky --save-dev` git에 명령이 실행될 때 같이 실행하게 할 수 있는 명령을 관리하는 도구-->
+`npm install react-router-dom` router 모듈<br/>
+`npm install eslint --save-dev` eslint 모듈 .eslintrc.js<br/>
+`npm install prettier --save-dev --save-exact` prettier 모듈 .prettierrc<br/>
+<!--`npm install husky --save-dev` git에 명령이 실행될 때 같이 실행하게 할 수 있는 명령을 관리하는 도구<br/>-->

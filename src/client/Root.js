@@ -1,11 +1,11 @@
-/* eslint-disable react/jsx-no-duplicate-props */
+/* eslint-disable */
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../shared/App';
 const Root = () => (
     <BrowserRouter>
-        <App/>
+        <App />
     </BrowserRouter>
 );
 
-export default Root; 
+export default Root;
