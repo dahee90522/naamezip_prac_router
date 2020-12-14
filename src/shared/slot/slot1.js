@@ -12,7 +12,7 @@ function slot1() {
                 <div className = "slotdetailimgcon">
                     <img src = "https://cdn-cached.naamezip.net/1594044423970.JPG"></img>
                 </div>
-                <h1 id = "title">여행 블로거의 '혼삶'가이드 4회차</h1>
+                <h1 id = "title">여행 블로거의 &apos;혼삶&apos;가이드 4회차</h1>
                 <h2 >혼자 잘 지내려면, 동지들이 필요하다 #혼행 #혼술</h2>
                 <div className="slotdetailadddate">
                     <h2 >서울특별시 영등포구 도림로112길</h2>
@@ -45,7 +45,7 @@ function slot1() {
                 <img src = "https://cdn-cached.naamezip.net/1606808207990.jpg"></img>
                 </div>
                 <h1 >포스트디셈버 1회차</h1>
-                <h2 >패션디자이너의 아틀리에 '포스트디셈버'로 초대합니다.</h2>
+                <h2>패션디자이너의 아틀리에 &apos;포스트디셈버&apos;로 초대합니다.</h2>
                 <div className="slotdetailadddate">
                     <h2 >서울특별시 서초구 동광로49길</h2>
                     <h2 >01.09(토), 02:00pm</h2>

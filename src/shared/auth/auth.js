@@ -9,3 +9,4 @@ const users = [
     if (user === undefined) throw new Error();
     return user;
   }
+  
