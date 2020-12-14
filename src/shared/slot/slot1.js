@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import './slot.css';
 
@@ -22,7 +23,7 @@ function slot1() {
                 <div className = "slotdetailimgcon">
                     <img src = "https://cdn-cached.naamezip.net/1606206189725.jpg"></img>
                     </div>
-                    <h1>도심속 오롯한 ㄷ자 한옥집 1회차</h1>
+                    <h1>도심속 오롯한 ㄷ자 한   옥집 1회차</h1>
                     <h2>함께 모여 맛있는 음식과 술 한잔 즐겨요</h2>
                 <div className="slotdetailadddate">
                     <h2 >서울특별시 종로구 자하문로</h2>
@@ -34,7 +35,7 @@ function slot1() {
                 <img src = "https://cdn-cached.naamezip.net/1602945589682.jpg"></img>
                 </div>
                 <h1 >의식주(酒) 1회차</h1>
-                <h2>현직바텐더와 함께하는 우아한 청춘을 위한 술이야기:)</h2>
+                <h2>현직바텐더와 함께하는 우아한 청춘을 위한 술이야기:&#41;</h2>
                 <div className="slotdetailadddate">
                     <h2 >서울특별시 용산구 우사단로10길</h2>
                     <h2 >01.07(목), 07:00pm</h2>
