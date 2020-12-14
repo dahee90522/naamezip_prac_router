@@ -3,12 +3,11 @@ import './slot.css';
 
 function slot1() {
     return ( 
-    <div className = "slotcontainer" >
-        <h1 className = "title" > <a href = "https://naamezip.com/collection/3">떠오르는 남의집 </a></h1> 
-        <h2 className = "explain" > 요즘엔 술 주제가 인기 있어요. <span > 전체보기 </span></h2 >
+    <div className = "slotcontainer">
+        <h1 className = "title"> <a href = "https://naamezip.com/collection/3">떠오르는 남의집 </a></h1> 
+        <h2 className = "explain"> 요즘엔 술 주제가 인기 있어요. <span > 전체보기 </span></h2 >
         <div className = "slotdetailcon">
-            <div className = "slotdetail" >
-            {/* onmouseup="document.getElementById('title').style.text-decoreation ='underline'" */}
+            <div className = "slotdetail">
                 <div className = "slotdetailimgcon">
                     <img src = "https://cdn-cached.naamezip.net/1594044423970.JPG"></img>
                 </div>
