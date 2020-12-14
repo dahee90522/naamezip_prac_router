@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+// import React, { useState } from 'react';
+// import { Redirect } from 'react-router-dom';
 import './sign.css';
 
 function Signup(){
-    return(
-        <></>
-    );
+// return(
+//     <></>
+// );
 }
 export default Signup;
