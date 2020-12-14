@@ -12,4 +12,4 @@ function Logoutbtn({ logout, history }) {
 
 }
 
-export default withRouter(Logoutbtn);
+export default withRouter(Logoutbtn);  
