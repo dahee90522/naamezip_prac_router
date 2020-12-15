@@ -1,21 +1,23 @@
-/* eslint-disable */
+import '../menu.css';
 
-import React, { useState } from "react";
-import { Route, Switch, NavLink } from "react-router-dom";
-import { Mainpage, Mypage, Login, Signin, Signup, NotFound } from "../pages";
-import { signIn } from "./auth/auth";
-import AuthRoute from "./auth/AuthRoute";
-import Logoutbtn from "./auth/Logoutbtn";
-import "../menu.css";
+import { Login, Mainpage, Mypage, NotFound, Signin, Signup } from '../pages';
+import { NavLink, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
+import { signIn, signUp } from './auth/auth';
 
-const App = props => {
+import AuthRoute from './auth/AuthRoute';
+import Logoutbtn from './auth/Logoutbtn';
+
+const App = () => {
   const activeStyle = {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   };
+
   const [user, setUser] = useState(null);
   const authenticated = user != null;
 
   const login = ({ email, password }) => setUser(signIn({ email, password }));
+  // const signup = ({ name, email, password }) =>
   const signup = ({ name, email, password }) =>
     setUser(signUp({ name, email, password }));
   const logout = () => setUser(null);
@@ -57,7 +59,6 @@ const App = props => {
                 </NavLink>
               )}
             </li>
-
             {/* <li><Logoutbtn/></li> */}
           </ul>
         </div>
@@ -80,14 +81,12 @@ const App = props => {
         <Route
           exact
           path="/Signup"
-          render={props => (
-            <Signin authenticated={authenticated} signup={signup} {...props} />
-          )}
+          render={props => <Signup signup={signup} {...props} />}
         />
         <Route
           exact
           path="/logout"
-          render={props => <Logoutbtn logout={logout} />}
+          render={() => <Logoutbtn logout={logout} />}
         />
         <Route exact path="/" component={Mainpage} />
         <Route component={NotFound} />
@@ -97,4 +96,3 @@ const App = props => {
 };
 
 export default App;
-
