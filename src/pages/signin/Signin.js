@@ -11,7 +11,7 @@ function Signin({ authenticated, login, location }) {
 
 	const handleClick = () => {
 		try {
-			login({ email, password });
+			login({ name, email, password });
 		} catch (e) {
 			alert('로그인 실패임');
 			setEmail('');

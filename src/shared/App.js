@@ -16,6 +16,8 @@ const App = props => {
   const authenticated = user != null;
 
   const login = ({ email, password }) => setUser(signIn({ email, password }));
+  const signup = ({ name, email, password }) =>
+    setUser(signUp({ name, email, password }));
   const logout = () => setUser(null);
   return (
     <div>
@@ -68,12 +70,18 @@ const App = props => {
         />
         {/* 마이 페이지에 로그인 값 넘기기 */}
         <Route exact path="/Login" component={Login} />
-        <Route exact path="/Signup" component={Signup} />
         <Route
           exact
           path="/Signin"
           render={props => (
             <Signin authenticated={authenticated} login={login} {...props} />
+          )}
+        />
+        <Route
+          exact
+          path="/Signup"
+          render={props => (
+            <Signin authenticated={authenticated} signup={signup} {...props} />
           )}
         />
         <Route
@@ -89,3 +97,4 @@ const App = props => {
 };
 
 export default App;
+
